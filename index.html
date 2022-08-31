@@ -40,31 +40,44 @@
                     </select>
                 </div>
             </label>
+            
             <button class="button button_primary" type="submit">Отправить</button>
-            <button class="button button_secondary" type="reset">Отчистить</button>
+            <button class="button button_secondary" type="reset">Очистить</button>
         </form>
         
-        <form class="second" action="#" method="get">
-            <!-- сделать аналогично -->
+        <form class="form" action="#" method="get">
             <h2>Вторая форма:</h2>
-            <div>
-                <p>Выберите то, что вам по душе</p>
-                <p><input type="checkbox" name="love" value="lipton">Липтон зеленый</p>
-                <p><input  type="checkbox" name="love" value="KFC">KFC</p>
-                <p><input type="checkbox" name="love" value="cross">Кроссовки</p>
-                <p><input  type="checkbox" name="love" value="cars"> Машины</p>
-                <p><input type="checkbox" name="love" value="cats">Коты</p>
-            </div>
+
+            <fieldset>
+                <legend>Выберите то, что вам по душе</legend>
+                
+                <label class="toggle-group__item"><input type="checkbox" name="love" value="lipton">Липтон зеленый</label>
+                <label class="toggle-group__item"><input  type="checkbox" name="love" value="KFC">KFC</label>
+                <label class="toggle-group__item"><input type="checkbox" name="love" value="cross">Кроссовки</label>
+                <label class="toggle-group__item"><input  type="checkbox" name="love" value="cars">Машины</label>
+                <label class="toggle-group__item"><input type="checkbox" name="love" value="cats">Коты</label>
+            </fieldset> 
+
+            <fieldset>
+                <legend>Выберите то, что вам по душе</legend>
+                
+                <label class="toggle-group__item"><input type="radio" name="love" value="lipton">Липтон зеленый</label>
+                <label class="toggle-group__item"><input  type="radio" name="love" value="KFC">KFC</label>
+                <label class="toggle-group__item"><input type="radio" name="love" value="cross">Кроссовки</label>
+                <label class="toggle-group__item"><input  type="radio" name="love" value="cars">Машины</label>
+                <label class="toggle-group__item"><input type="radio" name="love" value="cats">Коты</label>
+            </fieldset> 
+        
+            <label class="form-item">
+                <div class="form-item__label">Введите дополнительную информацию о себе, только честно</div>
+
+                <div class="form-item__content">
+                    <textarea name="info"></textarea>
+                </div>
+            </label>
             
-            <div>
-                <p>Введите дополнительную информацию о себе, только честно:</p>
-                <textarea name="info"></textarea>
-            </div>
-            
-            <div>
-                <button type="sumbit">Отправить</button>
-                <button type="reset">Отчистить</button>
-            </div>
+            <button class="button button_primary" type="sumbit">Отправить</button>
+            <button class="button button_secondary" type="reset">Очистить</button>
         </form>
     </body>
 </html>

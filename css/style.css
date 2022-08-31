@@ -1,8 +1,3 @@
-form.second {
-margin-left: 200px;
-padding-bottom: 150px;
-}
-
 .form {}
 
 .form-item {}
@@ -33,3 +28,10 @@ padding-bottom: 150px;
 .button_secondary {
     background-color: thistle;
 }
+
+/* Toggle group */
+
+.toggle-group__item{
+    display: block;
+}
+
