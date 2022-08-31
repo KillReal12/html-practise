@@ -1,0 +1,35 @@
+form.second {
+margin-left: 200px;
+padding-bottom: 150px;
+}
+
+.form {}
+
+.form-item {}
+
+/* Input */
+
+.input {}
+
+/* Select */
+
+.select {}
+
+.select__options {}
+
+
+/* Button */
+
+.button {
+    border-radius: 4px;
+    min-height: 32px;
+    min-width: 100px;
+}
+
+.button_primary {
+    background-color: rebeccapurple;
+}
+
+.button_secondary {
+    background-color: thistle;
+}
