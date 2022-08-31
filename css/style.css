@@ -17,12 +17,17 @@ html {
     border-radius: var(--border-radius--base);
     border: 1px solid rgb(192, 192, 192);
 }
+
 .form-item {
     display: block;
 }
 
-.form-item__label{
+.form-item__label {
     margin-bottom: 4px;
+}
+
+.form .form-group:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .form .form-item:not(:last-child) {
@@ -83,7 +88,7 @@ html {
 
 /* Toggle group */
 
-.toggle-group__item{
+.toggle-group__item {
     display: block;
 }
 
