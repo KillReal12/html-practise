@@ -16,9 +16,9 @@ html {
     margin-bottom: 12px;
 }
 
-/* Input */
+/* Textfield */
 
-.input {
+.textfield {
     border-radius: 8px;
     padding: 0 16px;
     height: 32px;
@@ -28,43 +28,28 @@ html {
     box-sizing: border-box;
 }
 
-.input:focus-visible {
+.textfield:focus-visible {
     box-shadow: 0 0 0 1px rebeccapurple;
 }
+
+/* Input */
+
+.input {}
 
 /* Textarea */
 
 .textarea {
     display: block;
-    border-radius: 8px;
-    padding: 8px 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     min-height: 32px;
-    border: 1px solid rgb(192, 192, 192);
-    transition: box-shadow .2s ease-in;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.textarea:focus-visible {
-    box-shadow: 0 0 0 1px rebeccapurple;
+    height: auto;
 }
 
 /* Select */
 
-.select {
-    border-radius: 8px;
-    padding: 0 16px;
-    height: 32px;
-    border: 1px solid rgb(192, 192, 192);
-    transition: box-shadow .2s ease-in;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.select:focus-visible {
-    box-shadow: 0 0 0 1px rebeccapurple;
-}
-
+.select {}
+    
 /* Button */
 
 .button {
