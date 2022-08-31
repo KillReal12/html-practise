@@ -1,3 +1,12 @@
+:root {
+    --border-radius--base: 8px;
+    --form-control-height: 32px;
+    --textfield-padding-horizontal: 16px;
+    --focus-outline-color: rebeccapurple;
+    --color-primary: rebeccapurple;
+
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,9 +28,9 @@ html {
 /* Textfield */
 
 .textfield {
-    border-radius: 8px;
-    padding: 0 16px;
-    height: 32px;
+    border-radius: var(--border-radius--base);
+    padding: 0 var(--textfield-padding-horizontal);
+    height: var(--form-control-height);
     border: 1px solid rgb(192, 192, 192);
     transition: box-shadow .2s ease-in;
     outline: none;
@@ -29,7 +38,7 @@ html {
 }
 
 .textfield:focus-visible {
-    box-shadow: 0 0 0 1px rebeccapurple;
+    box-shadow: 0 0 0 1px var(--focus-outline-color);
 }
 
 /* Input */
@@ -42,7 +51,7 @@ html {
     display: block;
     padding-top: 8px;
     padding-bottom: 8px;
-    min-height: 32px;
+    min-height: var(--form-control-height);
     height: auto;
 }
 
@@ -55,13 +64,13 @@ html {
 .button {
     color: white;
     border: none;
-    border-radius: 8px;
-    min-height: 32px;
+    border-radius: var(--border-radius--base);
+    min-height: var(--form-control-height);
     min-width: 100px;
 }
 
 .button_primary {
-    background-color: rebeccapurple;
+    background-color: var(--color-primary);
 }
 
 .button_secondary {
