@@ -1,10 +1,22 @@
 .form {}
 
-.form-item {}
+.form-item {
+    display: block;
+}
+
+.form-item__label{
+    margin-bottom: 4px;
+}
+
+.form .form-item:not(:last-child) {
+    margin-bottom: 12px;
+}
 
 /* Input */
 
-.input {}
+.input {
+
+}
 
 /* Select */
 
