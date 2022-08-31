@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Знакомство с HTML-тегами. Часть №3</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <h1 style="text-align: center;">Заполните информацию о себе</h1> 
+        
+        <form class="form" action="#" method="post" enctype="multipart/form-data">
+            <h2>Первая форма:</h2>
+
+            <label class="form-item">
+                <div class="form-item__label">Имя пользователя</div>
+
+                <div class="form-item__content">
+                    <input class="input" type="text" placeholder="Имя" name="user-name">
+                </div>
+            </label>
+            
+            <label class="form-item">
+                <div class="form-item__label">Пароль</div>
+                
+                <div class="form-item__content">
+                    <input class="input" type="password" placeholder="Пароль" name="password">
+                </div>
+            </label>
+        
+            <label class="form-item">
+                <div class="form-item__label">Выбор транспорта</div>
+                
+                <div class="form-item__content">
+                    <select class="select" name="transport">
+                        <option class="select__option" selected value="car">Машина</option>
+                        <option class="select__option" value="bus">Автобус</option>
+                        <option class="select__option" value="helicopter">Вертолет</option>
+                        <option class="select__option" value="tram">Трамвай</option>
+                    </select>
+                </div>
+            </label>
+ass
+            <button class="button button_primary" type="submit">Отправить</button>
+            <button class="button button_secondary" type="reset">Отчистить</button>
+        </form>
+        
+        <form class="second" action="#" method="get">
+            <!-- сделать аналогично -->
+            <h2>Вторая форма:</h2>
+            <div>
+                <p>Выберите то, что вам по душе</p>
+                <p><input type="checkbox" name="love" value="lipton">Липтон зеленый</p>
+                <p><input  type="checkbox" name="love" value="KFC">KFC</p>
+                <p><input type="checkbox" name="love" value="cross">Кроссовки</p>
+                <p><input  type="checkbox" name="love" value="cars"> Машины</p>
+                <p><input type="checkbox" name="love" value="cats">Коты</p>
+            </div>
+            
+            <div>
+                <p>Введите дополнительную информацию о себе, только честно:</p>
+                <textarea name="info"></textarea>
+            </div>
+            
+            <div>
+                <button type="sumbit">Отправить</button>
+                <button type="reset">Отчистить</button>
+            </div>
+        </form>
+    </body>
+</html>
+
