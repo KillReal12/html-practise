@@ -88,7 +88,56 @@ html {
 
 /* Toggle group */
 
-.toggle-group__item {
+.option {
     display: block;
+    margin-bottom: 8px;
 }
 
+.toggle-group__item {
+    display: block;
+    margin-bottom: 8px;
+    padding-left: 19.2px;
+}
+
+.checkbox__item {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    margin-top: 4.7px;
+    margin-left: -19.2px;
+    width: 9.6px;
+    height: 9.6px;
+    overflow: hidden;
+    border-radius: 0.8px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0 0 0 1.6px rebeccapurple;
+
+}
+
+/* Checked */
+
+.checkbox__item:checked + .check__box {
+    background-color: rebeccapurple;
+}
+
+.checkbox__item:focus + .check__box {
+    box-shadow:
+    0 0 0 1.6px rgb(109, 65, 153),
+    0 0 0 3.2px rgb(113, 77, 150);
+}
+
+.checkbox__item:disabled + .check__box {
+    box-shadow: 0 0 0 1.6px #9B9B9B;
+}
+
+.checkbox__item:disabled:checked + .check__box {
+    background-color: #9B9B9B;
+
+}
