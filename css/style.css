@@ -17,10 +17,11 @@ body {
 }
 
 h1 {
-    border: 3px solid rgb(192, 192, 192);
-    transition: box-shadow .2s ease-in;
-    border-radius: 8px;
-    border
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+h2 {
+    text-shadow: 0.5px 0.5px 1px black;
 }
 
 .form {
@@ -33,6 +34,7 @@ h1 {
 .form-group{
     border-radius: var(--border-radius--base);
     border: 1px solid rgb(192, 192, 192);
+    transition: box-shadow .2s ease-in;
 }
 
 .secondary-form {
@@ -95,7 +97,7 @@ h1 {
     padding-bottom: 8px;
     min-height: var(--form-control-height);
     height: 125px;
-    width: 520px;
+    width: 460px;
 }
 
 /* Select */
