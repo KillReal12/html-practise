@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-h1 {
+.head {
     text-shadow: 0.5px 0.5px 1px black;
 }
 
@@ -164,12 +164,16 @@ h2 {
     width: 9.6px;
     height: 9.6px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 2px;
     background-color: white;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-shadow: 0 0 0 1.6px rebeccapurple;
 
+}
+
+.radio {
+    border-radius: 8px;
 }
 
 /* Checked */
