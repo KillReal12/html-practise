@@ -3,51 +3,52 @@
     <head>
         <title>Знакомство с HTML-тегами. Часть №3</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
     </head>
     
     <body>
         <h1 class="head">Заполните информацию о себе</h1> 
-        
-        <form class="form" action="#" method="post" enctype="multipart/form-data">
-            <h2>Первая форма:</h2>
-
-            <label class="form-item">
-                <div class="form-item__label">Имя пользователя</div>
-
-                <div class="form-item__content">
-                    <input class="input textfield" type="text" placeholder="Имя" name="user-name">
-                </div>
-            </label>
-            
-            <label class="form-item">
-                <div class="form-item__label">Пароль</div>
+        <div class="block">
+            <form class="form" action="#" method="post" enctype="multipart/form-data">
+                <h2>Первая форма:</h2>
                 
-                <div class="form-item__content">
-                    <input class="input textfield" type="password" placeholder="Пароль" name="password">
-                </div>
-            </label>
-        
-            <label class="form-item">
-                <div class="form-item__label">Выбор транспорта</div>
+                <label class="form-item">
+                    <div class="form-item__label">Имя пользователя</div>
+                    
+                    <div class="form-item__content">
+                        <input class="input textfield" type="text" placeholder="Имя" name="user-name">
+                    </div>
+                </label>
                 
-                <div class="form-item__content">
-                    <select class="select textfield" name="transport">
-                        <option selected value="car">Машина</option>
-                        <option value="bus">Автобус</option>
-                        <option value="helicopter">Вертолет</option>
-                        <option value="tram">Трамвай</option>
-                    </select>
-                </div>
-            </label>
+                <label class="form-item">
+                    <div class="form-item__label">Пароль</div>
+                    
+                    <div class="form-item__content">
+                        <input class="input textfield" type="password" placeholder="Пароль" name="password">
+                    </div>
+                </label>
+                
+                <label class="form-item">
+                    <div class="form-item__label">Выбор транспорта</div>
+                    
+                    <div class="form-item__content">
+                        <select class="select textfield" name="transport">
+                            <option selected value="car">Машина</option>
+                            <option value="bus">Автобус</option>
+                            <option value="helicopter">Вертолет</option>
+                            <option value="tram">Трамвай</option>
+                        </select>
+                    </div>
+                </label>
+                
+                <button class="button button_primary" type="submit">Отправить</button>
+                <button class="button button_secondary" type="reset">Очистить</button>
+            </form>
             
-            <button class="button button_primary" type="submit">Отправить</button>
-            <button class="button button_secondary" type="reset">Очистить</button>
-        </form>
-        
-        <form class="secondary-form" action="#" method="get">
+            <form class="secondary-form" action="#" method="get">
             <h2>Вторая форма:</h2>
-
+            
             <fieldset class="form-group">
                 <legend>Выберите то, что вам по душе</legend>
                 
@@ -77,7 +78,7 @@
                     Коты
                 </label>
             </fieldset> 
-
+            
             <fieldset class="form-group">
                 <legend>Выберите то, что вам по душе</legend>
                 
@@ -102,10 +103,10 @@
                     Коты
                 </label>
             </fieldset> 
-        
+            
             <label class="form-item">
                 <div class="form-item__label">Введите дополнительную информацию о себе, только честно</div>
-
+                
                 <div class="form-item__content">
                     <textarea class="textarea textfield" name="info" rows="3"></textarea>
                 </div>
@@ -114,6 +115,7 @@
             <button class="button button_primary" type="sumbit">Отправить</button>
             <button class="button button_secondary" type="reset">Очистить</button>
         </form>
+    </div>        
     </body>
-</html>
+    </html>
 
